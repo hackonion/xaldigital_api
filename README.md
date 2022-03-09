@@ -4,7 +4,7 @@
 - Correr el comando **docker-compose up -d** para correr docker
 ### Construir la base de datos 
    - Correr **docker-compose exec backend bash** para acceder a la terminal en la ruta de la aplicacion
-   - Correr **python manage.py db init** para crear el repositorio de migrasion de la base de datos
+   - Correr **python manage.py db init** para crear el repositorio de migracion de la base de datos
    - Correr **python manage.py db migrate** para crear el esquema de la base de datos
    - Correr **python manage.py db upgrade** para construir las tablas en la base de datos
 
