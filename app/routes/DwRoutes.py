@@ -4,13 +4,15 @@
 
 from flask import Blueprint, jsonify, make_response, request
 from model.DwModel import Dw, db
-
+from schema.schema import Validate
+from flask_expects_json import expects_json
 
 api = Blueprint('api', __name__)
 
 #Get all items
 #Create new item 
 @api.route('/get_items',  methods=('GET', 'POST'))
+@expects_json(Validate._schema_dw, ignore_for=['GET'])
 def get_all_data():
     try:
         dw_item = Dw.query.all()
@@ -39,6 +41,7 @@ def get_all_data():
 #Get item by id
 #Update item by id
 @api.route('/get_item_by/<int:id>', methods=('GET', 'PUT', 'DELETE'))
+@expects_json(Validate._schema_dw, ignore_for=['GET','DELETE'])
 def get_item_by(id):
     try:
         dw_item = Dw.query.get(id)
