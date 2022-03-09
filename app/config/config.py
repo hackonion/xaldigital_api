@@ -8,3 +8,4 @@ class BaseConfig(object):
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:example@db/main'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = 'itsmysecretkey'
+    JSON_SORT_KEYS = False
