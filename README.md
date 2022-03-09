@@ -16,6 +16,6 @@ Rutas           | Metodo        |Funcionalidad            |
 --------------- | ------------- | ----------------------- | 
 /api/get_items  | GET           | Retorna todos los items |
 /api/get_items  | POST          | Crea un nuevo item      |
-/api/get_item_by| GET           | Retorna un item por id  |
-/api/get_item_by| PUT           | Modifica un item por id |
-/api/get_item_by| DELETE        | Elimina un item por id  |
+/api/get_item_by/id| GET           | Retorna un item por id  |
+/api/get_item_by/id| PUT           | Modifica un item por id |
+/api/get_item_by/id| DELETE        | Elimina un item por id  |
