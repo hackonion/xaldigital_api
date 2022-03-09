@@ -1,5 +1,4 @@
 """
-models.py
 - Data classes for the DWModel application
 """
 from dataclasses import dataclass
